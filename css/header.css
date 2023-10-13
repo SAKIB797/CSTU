@@ -1,0 +1,162 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css');
+
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white  ;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  z-index: 2;
+  
+}
+header img {
+  width: 30px;
+  height:30px;
+}
+
+.bi-list,.bi-three-dots-vertical{
+ font-size: 30px;
+ position: absolute;
+ z-index: 3;
+}
+.bi-list{
+  left: 20px;
+}
+.bi-three-dots-vertical{
+  right: 20px;
+}
+
+
+/* menu*/
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left : 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 20%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+
+
+
+/****notice**/
+
+.notice{
+  height: 100%;
+  width: 0%;
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  right : 0;
+  top: 0;
+  /* Black fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+.notice .offbtn {
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  font-size: 60px;
+}
+.notice a {
+  padding: 8px;
+  text-decoration: none;
+  color: #818181;
+  /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+.notice a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+.notice .notice_table{
+    position: relative;
+  top: 15%; /* 25% from the top */
+  width: 95%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+ margin: auto;
+}
+.notice_table caption{
+  color: orange;
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  
+}
+.notice_table {
+ border-collapse: collapse;
+ width: 100%;
+}
+.notice_table th,.notice_table td{
+ text-align: center;
+ padding: 8px;
+ color: #f1f1f1;
+   background-color:rgba(0,0,0,0) ;
+   border: 1px solid lightgray;
+
+}
+
+.notice_table td {
+  font-size: 15px;
+}
+.notice_table td a {
+ font-size: 20px; 
+  
+}

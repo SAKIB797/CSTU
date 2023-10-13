@@ -1,0 +1,130 @@
+body {
+  font-size: 15pt;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+p {
+  font-size: 15px;
+  color: gray;
+}
+
+.hilsa {
+  color: gold;
+}
+
+.cstu {
+  font-weight: bold;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+.warning {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  text-align: center;
+  color: white;
+  background: #285880;
+  height: 25px;
+  line-height: 25px;
+}
+
+.warning,
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+iframe {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 13px;
+}
+
+main .profile img {
+  width: 100%;
+  height: auto;
+  border: 3px solid #F3F6FB;
+  border-radius: 5px;
+  margin-top: -10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 2px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+
+td {
+  font-size: 15px;
+}
+
+.profile_table tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+tr th {
+  background-color: #FEB307;
+
+}
+
+tr td a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .row {
+    width: 50%;
+  }
+
+  .cstu {
+    font-size: 2.5vw;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  main .profile img {
+    width: 30%;
+    margin: auto;
+    display: block;
+    margin-top: -15px;
+
+  }
+
+  tr td {
+    font-size: 18px;
+  }
+
+  tr th {
+    font-size: 20px;
+  }
+
+}
+
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+  display: none;
+}
